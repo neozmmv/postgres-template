@@ -1,6 +1,7 @@
+# https://hub.docker.com/_/postgres
 services:
   db:
-    image: postgres:16-alpine
+    image: postgres:16-alpine # you can change to newer images if wanted
     environment:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     ports:
